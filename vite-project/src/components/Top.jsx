@@ -1,10 +1,10 @@
 import React from 'react';
-//import 'styles/Top.scss';
+import '/src/styles/Top.css';
 
 const Top = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold underline">My To do App</h1>
+        <div className='div-top'>
+            <h1 className='h1-top'>My to do App</h1>
         </div>
     );
 };

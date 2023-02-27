@@ -1,19 +1,17 @@
 import React from 'react';
-//import 'styles/Check.scss';
+import '/src/styles/Check.scss';
 
 const Check = () => {
     return (
-        <div>
-            <ul className="flex flex-col">
-                <li className="flex items-left">
-                <input type="checkbox" id="item1" className="mr-2" />
-                <label htmlFor="item1" className="text-gray-700">Learn React</label>
-                </li>
-                <li className="flex items-left">
-                <input type="checkbox" id="item2" className="mr-2" />
-                <label htmlFor="item2" className="text-gray-700">Be awesome</label>
-                </li> 
-            </ul>
+        <div className='div-check'>
+            <div className='div-item'>
+                <input type="checkbox" id="item1"/>
+                <label htmlFor="item1">Learn React</label>
+            </div>
+            <div className='div-item'>
+                <input type="checkbox" id="item2"/>
+                <label htmlFor="item2">Be awesome</label>
+            </div>
         </div>
 
     );

@@ -1,9 +1,10 @@
 import React from 'react';
 import TodoApp from '/src/components/TodoApp.jsx';
+import '/src/styles/App.css';
 
 const App = () => {
   return (
-    <div className='flex .justify-center '>
+    <div className='div-app'>
       <TodoApp />
     </div>
   );
