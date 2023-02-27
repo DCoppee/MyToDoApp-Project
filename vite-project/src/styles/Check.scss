@@ -5,7 +5,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0 0 10vw 10vw;
-    line-height: 10vw;
+    line-height: 8vw;
+    list-style-type: none;
     @include tablet {
         margin: 2vw 0 6vw 10vw;
         line-height: 4vw;
@@ -13,5 +14,6 @@
     @include desktop {
         line-height: 3vw;
         font-size: 1.5vw;
+        margin-left: 5vw;
     }
 }
