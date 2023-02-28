@@ -45,11 +45,19 @@
   border-radius: 8px;
   background-color: rgba(31, 38, 135, 0.2588235294);
 }
+.div-new .btn-new:hover {
+  color: #121648;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .div-new .btn-new {
     width: 9vw;
     height: 4vw;
     font-size: 2vw;
+  }
+  .div-new .btn-new:hover {
+    color: #121648;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -57,5 +65,9 @@
     width: 7vw;
     height: 2.5vw;
     font-size: 1.5vw;
+  }
+  .div-new .btn-new:hover {
+    color: #121648;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=New.css.map */

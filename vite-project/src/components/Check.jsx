@@ -1,34 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '/src/styles/Check.scss';
 
-const Check = () => {
-    const initialTodos = [
-      ["First task", false],
-      ["Second task", false]
-    ];
-    const [todos, setTodos] = useState(initialTodos);
+const Check = ({ todos, onToggle }) => {
 
-    //Fonction pour modifier l'état du tableau
-    const handleToggle = (index) => {
-      const newTodos = [...todos];
-      newTodos[index][1] = !newTodos[index][1];
-      setTodos(newTodos);
-    };
+  const handleToggle = (index) => {
+    const newTodos = [...todos];
+    newTodos[index][1] = !newTodos[index][1];
+    onToggle(newTodos);
+  };
 
-    return (
-      <ul className='div-check'>
+  return (
+    <ul className='div-check'>
       {todos.map((todo, index) => (
         <li key={index}>
-          <input
-            type="checkbox"
-            checked={todo[1]}
-            onChange={() => handleToggle(index)}
-          />
+          <input type="checkbox" checked={todo[1]} onChange={() => handleToggle(index)} />
           {todo[0]}
         </li>
       ))}
     </ul>
-    );
+  );
 };
 
 export default Check;
@@ -58,4 +48,6 @@ puis elle inverse la valeur de la propriété "done" pour l'objet de tâche corr
 Enfin, la fonction utilise la méthode "setTodos" pour mettre à jour l'état du composant avec la nouvelle copie du tableau.
 
 Dans le rendu de la liste, la valeur de la propriété "done" est utilisée pour déterminer si une case à cocher doit être cochée ou non,
-Ajouter également un gestionnaire d'événements "onChange" pour chaque case à cocher qui appelle la fonction "handleToggle" avec l'index correspondant de la tâche.*/
+Ajouter également un gestionnaire d'événements "onChange" pour chaque case à cocher qui appelle la fonction "handleToggle" avec l'index correspondant de la tâche.
+
+Enfin, la fonction onToggle modifie l'état de la liste de tâches lorsqu'un élément est coché ou décoché.*/

@@ -37,15 +37,27 @@
         border: none;
         border-radius: 8px;
         background-color: #1f268742;
+        &:hover{
+            color:#121648;
+            cursor: pointer;
+          }
         @include tablet {
             width: 9vw;
             height: 4vw;
             font-size: 2vw;
+            &:hover{
+                color:#121648;
+                cursor: pointer;
+              }
         }
         @include desktop {
             width: 7vw;
             height: 2.5vw;
             font-size: 1.5vw;
+            &:hover{
+                color:#121648;
+                cursor: pointer;
+              }
         }
     }
 }
