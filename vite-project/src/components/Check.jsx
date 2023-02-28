@@ -3,20 +3,30 @@ import '/src/styles/Check.scss';
 
 const Check = ({ todos, onToggle }) => {
 
-  const handleToggle = (index) => {
-    const newTodos = [...todos];
-    newTodos[index][1] = !newTodos[index][1];
+  const handleToggle = (id) => {
+    const newTodos = todos.map(todo => {
+      if (todo.id === id) {
+        return { ...todo, completed: !todo.completed };
+      } else {
+        return todo;
+      }
+    });
+    //const newTodos = [...todos];
+    //newTodos[id].completed = !newTodos[id].completed;
     onToggle(newTodos);
   };
+  
 
   return (
     <ul className='div-check'>
-      {todos.map((todo, index) => (
-        <li key={index}>
-          <input type="checkbox" checked={todo[1]} onChange={() => handleToggle(index)} />
-          {todo[0]}
-        </li>
-      ))}
+      {todos.map((todo) => (
+  <li key={todo.id}>
+    <input type="checkbox" checked={todo.completed} onChange={() => handleToggle(todo.id)} />
+    {todo.newTodo}
+  </li>
+))}
+
+
     </ul>
   );
 };
