@@ -11,8 +11,6 @@ const Check = ({ todos, onToggle }) => {
         return todo;
       }
     });
-    //const newTodos = [...todos];
-    //newTodos[id].completed = !newTodos[id].completed;
     onToggle(newTodos);
   };
   

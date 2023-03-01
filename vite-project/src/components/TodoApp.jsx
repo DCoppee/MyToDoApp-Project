@@ -15,6 +15,10 @@ const TodoApp = () => {
     setTodos([...todos, {id: uuidv4(), newTodo, completed: false}]);
   };
 
+  const handleClearList = () => {
+    setTodos([]);
+    };
+
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
   }, [todos]);
@@ -22,7 +26,7 @@ const TodoApp = () => {
   return (
     <div className='todoapp-div'>
         <Top />
-        <New onAddTodo={handleAddTodo} />
+        <New onAddTodo={handleAddTodo} onClearList={handleClearList} />
         <Check todos={todos} onToggle={setTodos} />
     </div>
   );
@@ -30,7 +34,8 @@ const TodoApp = () => {
 
 export default TodoApp;
 
-/*Déplacer ici (composant parent) l'état "todos" et la fonction "handleAddTodo" (avec useState)
+/*Déplacer ici (composant parent) l'état "todos", la fonction "handleAddTodo"
+et la fonction onClearList (avec useState): les stocker en tant que variables
 et les transmettre en tant que props aux composants enfants "New" et "Check".
 Définir une clé unique pour l'app avec LSKEY.
 Ajouter le hook useEffect.
@@ -39,5 +44,4 @@ utiliser JSON.parse() pour convertir les données JSON stockées dans le localSt
 Si aucune donnée n'est trouvée dans le localStorage, initialTodos s'initialise avec un tableau vide [].
 Dans handleAddTodo(), simple mise à jour de l'état todos.
 Enfin, ajouter une fonction useEffect() pour stocker UNE COPIE des données todos dans le localStorage
-chaque fois que l'état todos est mis à jour.
-*/
+chaque fois que l'état todos est mis à jour.*/

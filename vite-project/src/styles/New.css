@@ -21,6 +21,7 @@
   }
 }
 .div-new .input-new {
+  width: 70vw;
   border: none;
 }
 @media screen and (min-width: 768px) {
@@ -35,7 +36,23 @@
     height: 1.5vw;
   }
 }
-.div-new .btn-new {
+.div-new .div-btn {
+  width: 38vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .div-new .div-btn {
+    width: 22vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .div-new .div-btn {
+    width: 17vw;
+  }
+}
+.div-new .div-btn .btn-new {
   width: 15vw;
   height: 6vw;
   margin-top: 1.5vw;
@@ -45,28 +62,64 @@
   border-radius: 8px;
   background-color: rgba(31, 38, 135, 0.2588235294);
 }
-.div-new .btn-new:hover {
+.div-new .div-btn .btn-new:hover {
   color: #121648;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .div-new .btn-new {
+  .div-new .div-btn .btn-new {
     width: 9vw;
     height: 4vw;
     font-size: 2vw;
   }
-  .div-new .btn-new:hover {
+  .div-new .div-btn .btn-new:hover {
     color: #121648;
     cursor: pointer;
   }
 }
 @media screen and (min-width: 1280px) {
-  .div-new .btn-new {
+  .div-new .div-btn .btn-new {
     width: 7vw;
     height: 2.5vw;
     font-size: 1.5vw;
   }
-  .div-new .btn-new:hover {
+  .div-new .div-btn .btn-new:hover {
+    color: #121648;
+    cursor: pointer;
+  }
+}
+.div-new .div-btn .btn-clear {
+  width: 20vw;
+  height: 6vw;
+  margin-top: 1.5vw;
+  color: white;
+  font-family: "Tilt Neon", cursive;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(31, 38, 135, 0.2588235294);
+}
+.div-new .div-btn .btn-clear:hover {
+  color: #121648;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .div-new .div-btn .btn-clear {
+    width: 12vw;
+    height: 4vw;
+    font-size: 2vw;
+  }
+  .div-new .div-btn .btn-clear:hover {
+    color: #121648;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .div-new .div-btn .btn-clear {
+    width: 9vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+  }
+  .div-new .div-btn .btn-clear:hover {
     color: #121648;
     cursor: pointer;
   }
