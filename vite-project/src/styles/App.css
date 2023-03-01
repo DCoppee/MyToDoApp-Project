@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   margin-top: 5%;
@@ -16,4 +17,69 @@ body {
   body {
     margin: 2vw 18vw 2vw 18vw;
   }
-}/*# sourceMappingURL=App.css.map */
+}
+
+/* Essai de NightMode: toggle créé, mais intégration du css à revoir
+(problème de conteneur + d'envoi du nightmode dans les différents composants)
+.night-mode {
+    background-color: rgb(0, 58, 109);
+    color:rgb(232, 244, 255);
+    .btn-new {
+        background-color: white;
+        color:#121648;
+        &:hover{
+            background-color: #1f268742;
+            color:white;
+            cursor: pointer;
+        }
+        @include tablet {
+            width: 9vw;
+            height: 4vw;
+            font-size: 2vw;
+            &:hover{
+                background-color: #1f268742;
+                color:white;
+                cursor: pointer;
+            }
+        }
+        @include desktop {
+            width: 7vw;
+            height: 2.5vw;
+            font-size: 1.5vw;
+            &:hover{
+                background-color: #1f268742;
+                color:white;
+                cursor: pointer;
+            }
+        }
+    }
+    .btn-clear {
+        background-color: white;
+        color:#121648;
+        &:hover{
+            background-color: #1f268742;
+            color:white;
+            cursor: pointer;
+        }
+        @include tablet {
+            width: 12vw;
+            height: 4vw;
+            font-size: 2vw;
+            &:hover{
+                background-color: #1f268742;
+                color:white;
+                cursor: pointer;
+            }
+        }
+        @include desktop {
+            width: 9vw;
+            height: 2.5vw;
+            font-size: 1.5vw;
+            &:hover{
+                background-color: #1f268742;
+                color:white;
+                cursor: pointer;
+            }
+        }
+    }
+}*//*# sourceMappingURL=App.css.map */

@@ -20,6 +20,7 @@
     .input-new {
         width: 70vw;
         border: none;
+        border-radius: 4px;
         @include tablet {
             width: 40vw;
             height: 2.5vw;

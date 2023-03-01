@@ -23,6 +23,7 @@
 .div-new .input-new {
   width: 70vw;
   border: none;
+  border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
   .div-new .input-new {
