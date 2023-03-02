@@ -17,7 +17,7 @@ My mission was to build a small todo application that lives in the browser, and 
 
 ## Deployment
 
-[My to do App](https://dcoppee-mytodoapp.netlify.app/)
+Visit my app on Netlify : [My to do App](https://dcoppee-mytodoapp.netlify.app/)
 
 ![Screenshot 1](/vite-project/src/assets/Ss1.png)
 ![Screenshot 2](/vite-project/src/assets/Ss2.png)
