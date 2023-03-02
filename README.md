@@ -11,6 +11,9 @@ My mission was to build a small todo application that lives in the browser, and 
 - Creation of a project with Vite
 - Handling basic hooks
 - Saving the tasks in a local storage
-- Extra features: "Clear list" button, "Night mode" toggle switch (to improve)
+- Extra features: "Clear list" button, "Night mode" toggle switch (in progress)
 - Styling with SASS
 - Responsiveness
+
+![Screenshot 1](/vite-project/src/assets/Ss1.png)
+![Screenshot 2](/vite-project/src/assets/Ss2.png)
