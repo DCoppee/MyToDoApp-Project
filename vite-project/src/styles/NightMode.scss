@@ -3,9 +3,17 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 20px;
+    width: 9vw;
+    height: 4vw;
     margin-bottom: 8vw;
+    @include tablet {
+      width: 3.5vw;
+      height: 1.6vw;
+      margin-bottom: 4vw;
+    }
+    @include desktop {
+      margin-bottom: 3vw;
+    }
   }
   
   .switch input {
@@ -29,15 +37,21 @@
   
   .slider:before {
     position: absolute;
+    height: 3.3vw;
+    width: 3.3vw;
+    left: 0.7vw;
+    bottom: 0.3vw;
     content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 2px;
     background-color: rgb(168, 214, 255) ;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
+    @include tablet {
+      height: 1.3vw;
+      width: 1.3vw;
+      left: 0.3vw;
+      bottom: 0.1vw;
+    }
   }
   
   input:checked + .slider {
@@ -49,8 +63,13 @@
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
+    -webkit-transform: translateX(4.4vw);
+    -ms-transform: translateX(4.4vw);
+    transform: translateX(4.4vw);
+    @include tablet {
+      -webkit-transform: translateX(1.6vw);
+      -ms-transform: translateX(1.6vw);
+      transform: translateX(1.6vw);
+    }
   }
   
